@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @music.title
+%p
+  %b Play time:
+  = @music.play_time
+%p
+  %b Artists:
+  = @music.artists
+%p
+  %b Album:
+  = @music.album
+%p
+  %b Genre:
+  = @music.genre
+%p
+  %b Like:
+  = @music.like
+
+= link_to 'Edit', edit_music_path(@music)
+\|
+= link_to 'Back', musics_path

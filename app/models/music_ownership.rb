@@ -1,0 +1,2 @@
+class MusicOwnership < ApplicationRecord
+end

@@ -88,6 +88,8 @@ GEM
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    gretel (3.0.9)
+      rails (>= 3.1.0)
     haml (5.0.2)
       temple (>= 0.8.0)
       tilt
@@ -254,12 +256,14 @@ PLATFORMS
 
 DEPENDENCIES
   addressable
+  bcrypt (~> 3.1.7)
   bootsnap
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   devise-two-factor
   erb2haml
+  gretel
   hamlit-rails
   jbuilder (~> 2.5)
   kaminari

@@ -1,0 +1,14 @@
+         Prefix Verb   URI Pattern                Controller#Action
+          users POST   /users(.:format)           users#create
+       new_user GET    /users/new(.:format)       users#new
+           user DELETE /users/:id(.:format)       users#destroy
+musicalist_home GET    /musicalist/home(.:format) musicalist#home
+musicalist_help GET    /musicalist/help(.:format) musicalist#help
+         musics GET    /musics(.:format)          musics#index
+                POST   /musics(.:format)          musics#create
+      new_music GET    /musics/new(.:format)      musics#new
+     edit_music GET    /musics/:id/edit(.:format) musics#edit
+          music GET    /musics/:id(.:format)      musics#show
+                PATCH  /musics/:id(.:format)      musics#update
+                PUT    /musics/:id(.:format)      musics#update
+                DELETE /musics/:id(.:format)      musics#destroy

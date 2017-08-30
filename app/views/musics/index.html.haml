@@ -1,0 +1,31 @@
+%h1 Listing musics
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Play time
+      %th Artists
+      %th Album
+      %th Genre
+      %th Like
+      %th
+      %th
+      %th
+
+  %tbody
+    - @musics.each do |music|
+      %tr
+        %td= music.title
+        %td= music.play_time
+        %td= music.artists
+        %td= music.album
+        %td= music.genre
+        %td= music.like
+        %td= link_to 'Show', music
+        %td= link_to 'Edit', edit_music_path(music)
+        %td= link_to 'Destroy', music, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Music', new_music_path

@@ -1,0 +1,2 @@
+module MusicalistHelper
+end
