@@ -1,19 +1,17 @@
-         Prefix Verb   URI Pattern                Controller#Action
-           root GET    /                          musirica#home
-  musirica_home GET    /musirica/home(.:format)   musirica#home
-  musirica_help GET    /musirica/help(.:format)   musirica#help
-musicalist_home GET    /musicalist/home(.:format) musicalist#home
-musicalist_help GET    /musicalist/help(.:format) musicalist#help
-  users_setting GET    /users/setting(.:format)   users#setting
-          users POST   /users(.:format)           users#create
-       new_user GET    /users/new(.:format)       users#new
-           user GET    /users/:id(.:format)       users#show
-                DELETE /users/:id(.:format)       users#destroy
-         musics GET    /musics(.:format)          musics#index
-                POST   /musics(.:format)          musics#create
-      new_music GET    /musics/new(.:format)      musics#new
-     edit_music GET    /musics/:id/edit(.:format) musics#edit
-          music GET    /musics/:id(.:format)      musics#show
-                PATCH  /musics/:id(.:format)      musics#update
-                PUT    /musics/:id(.:format)      musics#update
-                DELETE /musics/:id(.:format)      musics#destroy
+         Prefix Verb URI Pattern                Controller#Action
+           root GET  /                          musirica#home
+   musics_index GET  /musics/index(.:format)    musics#index
+  musics_create GET  /musics/create(.:format)   musics#create
+     musics_new GET  /musics/new(.:format)      musics#new
+    musics_show GET  /musics/show(.:format)     musics#show
+ musics_destroy GET  /musics/destroy(.:format)  musics#destroy
+    musics_edit GET  /musics/edit(.:format)     musics#edit
+  musics_update GET  /musics/update(.:format)   musics#update
+   users_create GET  /users/create(.:format)    users#create
+      users_new GET  /users/new(.:format)       users#new
+     users_show GET  /users/show(.:format)      users#show
+  users_destroy GET  /users/destroy(.:format)   users#destroy
+  musirica_home GET  /musirica/home(.:format)   musirica#home
+  musirica_help GET  /musirica/help(.:format)   musirica#help
+musicalist_home GET  /musicalist/home(.:format) musicalist#home
+musicalist_help GET  /musicalist/help(.:format) musicalist#help
