@@ -1,0 +1,2 @@
+module MusiricaHelper
+end
