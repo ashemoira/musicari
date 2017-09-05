@@ -1,2 +1,8 @@
-%h1 Users#show
-%p Find me in app/views/users/show.html.haml
+%h1 ユーザー情報
+%div
+  %p
+    %b ユーザー名：
+    = @user.name
+  %p
+    %b メールアドレス
+    = @user.email

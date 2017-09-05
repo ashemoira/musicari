@@ -1,17 +1,11 @@
 Rails.application.routes.draw do
   root to: 'musirica#home'
-  get 'musics/index'
-  get 'musics/create'
-  get 'musics/new'
-  get 'musics/show'
-  get 'musics/destroy'
-  get 'musics/edit'
-  get 'musics/update'
 
-  get 'users/create'
-  get 'users/new'
-  get 'users/show'
-  get 'users/destroy'
+  resources :musics, only: %i{new show create destroy edit update}
+  get 'musics/index'
+
+  resources :users, only: %i{new show create destroy edit update}
+  get 'users/setting'
 
   get 'musirica/home'
   get 'musirica/help'

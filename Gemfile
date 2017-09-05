@@ -25,6 +25,8 @@ gem 'bootsnap'
 gem 'gretel'
 gem 'devise-two-factor'
 gem 'kaminari'
+gem 'redis'
+gem 'redis-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

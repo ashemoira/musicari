@@ -7,6 +7,7 @@ class CreateMusics < ActiveRecord::Migration[5.1]
       t.string :album
       t.string :genre
       t.boolean :like, default: false
+      t.integer :user_id
 
       t.timestamps
     end
