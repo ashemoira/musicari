@@ -1,5 +1,7 @@
          Prefix Verb   URI Pattern                Controller#Action
-  users_setting GET    /users/setting(.:format)   users#setting
+          login GET    /login(.:format)           sessions#new
+                POST   /login(.:format)           sessions#create
+         logout DELETE /logout(.:format)          sessions#destroy
            root GET    /                          musirica#home
          musics POST   /musics(.:format)          musics#create
       new_music GET    /musics/new(.:format)      musics#new
@@ -16,6 +18,7 @@
                 PATCH  /users/:id(.:format)       users#update
                 PUT    /users/:id(.:format)       users#update
                 DELETE /users/:id(.:format)       users#destroy
+  users_setting GET    /users/setting(.:format)   users#setting
   musirica_home GET    /musirica/home(.:format)   musirica#home
   musirica_help GET    /musirica/help(.:format)   musirica#help
 musicalist_home GET    /musicalist/home(.:format) musicalist#home
